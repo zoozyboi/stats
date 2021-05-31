@@ -1,0 +1,169 @@
+//font-family variables
+$Inter: 'Inter', sans-serif;
+$LDeca: 'Lexend Deca', sans-serif;
+
+
+
+html {
+    box-sizing: border-box;
+
+}
+*,*::before,*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: $Inter;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    line-height: 1.3;
+
+    // //media query styles 
+}
+.main {
+    background: hsl(233, 47%, 7%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    background: hsl(244, 38%, 16%);
+    margin: 60px 25px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card-header {
+    background-image: url('/images/image-header-mobile.jpg');
+    background-size: cover;
+    height: 230px;
+    position: relative;
+}
+.header-overlay {
+    width: 100%;
+    height: 100%;
+    background: hsl(277, 74%, 51%);
+    opacity: .5;
+    position: absolute;
+}
+.card-body {
+    margin: 32px;
+    text-align: center;
+
+    .title {
+        font-family: $Inter;
+        font-size: 25px;
+        color: hsl(0, 0%, 100%);
+    }
+    .insights {
+        color: hsl(277, 64%, 61%);
+        opacity: .9;
+    }
+    .paragraph {
+        margin-top: 10px;
+        font-family: $LDeca;
+        font-size: 13px;
+        color: hsla(0, 0%, 100%, 0.75);
+    }
+}
+.card-footer {
+    
+
+    .item {
+        margin-top: 20px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .number {
+        font-family: $LDeca;
+        font-size: 19px;
+    }
+    .portion {
+        font-size: 10px;
+        color: hsla(0, 0%, 100%, 0.75);
+        text-transform: uppercase;
+        opacity: .8;
+    }
+}
+
+@media(min-width: 870px) {
+    .card {
+        border-radius: 5px;
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 870px; 
+    }
+    .card-header {
+        width: 884px;
+        height: 440px;
+        overflow: hidden;
+        
+    }
+    .card-body {
+        margin-left: 60px;
+        margin-right: 60px;
+        .title {
+            margin-top: 30px;
+            text-align: left;
+            font-size: 30px;
+        }
+        .paragraph {
+            text-align: left;
+            font-size: 15px;
+        }
+    }
+    .card-footer {
+        margin-top: 60px;
+        display: flex;
+        .item{
+            flex: 1;
+            // height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media(min-width: 1269px) {
+    .card {
+        border-radius: 5px;
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 1270px; 
+    }
+
+    .card-body {
+
+        .title {
+
+            font-size: 46px;
+        }
+        .paragraph {
+            font-size: 14px;
+        }
+    }
+
+    .card-footer {
+
+        .number {
+            font-family: $LDeca;
+            font-size: 26px;
+        }
+        .portion {
+            font-size: 15px;
+            color: hsla(0, 0%, 100%, 0.75);
+            text-transform: uppercase;
+            opacity: .8;
+        }
+    }
+}
+

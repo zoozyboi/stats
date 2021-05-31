@@ -1,0 +1,22 @@
+// Breakpoints
+
+@media (min-width: 63em) {
+    //styles goes here..
+}
+
+//phone= 360px, tablet= 768px, desktop= 1366px, LgDesktop = 1920px
+// !default; 
+
+$breakpoints: (
+    "phone": "22.5em",
+    "tablet": "48em",
+    "desktop": "85.375em",
+    "LgDesktop": "120em" 
+)!default;
+
+@mixin breakpoint($types) {
+    @media(min-width: map-get($breakpoints, $types)) {
+        @content;
+    }
+}
+

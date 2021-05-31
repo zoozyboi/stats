@@ -1,0 +1,199 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  line-height: 1.3;
+}
+
+.main {
+  background: #090b1a;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  background: #1b1938;
+  margin: 60px 25px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-header {
+  background-image: url("/images/image-header-mobile.jpg");
+  background-size: cover;
+  height: 230px;
+  position: relative;
+}
+
+.header-overlay {
+  width: 100%;
+  height: 100%;
+  background: #9826df;
+  opacity: .5;
+  position: absolute;
+}
+
+.card-body {
+  margin: 32px;
+  text-align: center;
+}
+
+.card-body .title {
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  color: white;
+}
+
+.card-body .insights {
+  color: #aa5cdb;
+  opacity: .9;
+}
+
+.card-body .paragraph {
+  margin-top: 10px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.card-footer .item {
+  margin-top: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-footer .number {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 19px;
+}
+
+.card-footer .portion {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+  opacity: .8;
+}
+
+@media (min-width: 870px) {
+  .card {
+    border-radius: 5px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 870px;
+  }
+  .card-header {
+    width: 884px;
+    height: 440px;
+    overflow: hidden;
+  }
+  .card-body {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .card-body .title {
+    margin-top: 30px;
+    text-align: left;
+    font-size: 30px;
+  }
+  .card-body .paragraph {
+    text-align: left;
+    font-size: 15px;
+  }
+  .card-footer {
+    margin-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .card-footer .item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 1269px) {
+  .card {
+    border-radius: 5px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 1270px;
+  }
+  .card-body .title {
+    font-size: 46px;
+  }
+  .card-body .paragraph {
+    font-size: 14px;
+  }
+  .card-footer .number {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 26px;
+  }
+  .card-footer .portion {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.75);
+    text-transform: uppercase;
+    opacity: .8;
+  }
+}
+/*# sourceMappingURL=style.css.map */
