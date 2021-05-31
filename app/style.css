@@ -40,7 +40,7 @@ body {
 }
 
 .card-header {
-  background-image: url("/images/image-header-mobile.jpg");
+  background-image: url("../images/image-header-mobile.jpg");
   background-size: cover;
   height: 230px;
   position: relative;
